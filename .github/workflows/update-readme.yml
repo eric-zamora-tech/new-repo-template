@@ -24,3 +24,5 @@ jobs:
           git add README.md
           git commit -m "Updated README with repository name"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
