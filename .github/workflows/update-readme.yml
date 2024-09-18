@@ -15,8 +15,7 @@ jobs:
 
       - name: Update README
         run: |
-          # Replace the placeholder with the actual repo name
-          sed -i "s/{{REPO_NAME}}/${{ github.repository }}/g" README.md
+          sed -i "s#{{REPO_NAME}}#eric-zamora-tech/new-repo-template#g" README.md
 
       - name: Commit changes
         run: |
