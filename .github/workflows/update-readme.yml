@@ -26,14 +26,14 @@ jobs:
 
       - name: Update README
         run: |
-          sed -i "s#{{REPO_NAME}}#${{ env.FORMATTED_NAME }}#g" README.md
+          sed -i "s#{{ REPO_NAME }}#${{ env.FORMATTED_NAME }}#g" README.md
 
       - name: Commit changes
         run: |
           git config --local user.email "eric.zamora.in@gmail.com"
           git config --local user.name "eric-zamora-tech"
           git add README.md
-          git commit -m "Updated README"
+          git commit -m "Updated README with formatted repository name" || echo "No changes to commit"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
