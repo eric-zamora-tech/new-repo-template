@@ -32,7 +32,7 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
-          git config --local user.email "eric-zamora-tech@gmail.com"
+          git config --local user.email "eric.zamora.in@gmail.com"
           git config --local user.name "eric-zamora-tech"
           git add README.md
           git commit -m "Updated README with formatted repository name"
