@@ -28,7 +28,7 @@ jobs:
 
       - name: Update README
         run: |
-          sed -i "s#{{REPO_NAME}}#${{ env.FORMATTED_NAME }}/g" README.md
+          sed -i "s#{{REPO_NAME}}#${{ env.FORMATTED_NAME }}#g" README.md
 
       - name: Commit and Push Changes
         run: |
